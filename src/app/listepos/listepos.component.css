@@ -1,0 +1,41 @@
+table {
+  width: 100%;
+}
+.full-width-table {
+  width: 100%;
+}
+#Entete th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+
+  background-color: #E96429;
+  color: white;
+
+}
+#Entete {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+
+}
+
+#Entete td, #Entete th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+#Entete tr:nth-child(even){
+  background-color: #f2f2f2;
+}
+
+#Entete tr:hover {
+  background-color: #ddd;
+}
+
+td.Voir_Postulants{
+  font-weight: bold;
+  color: blue;
+  text-decoration: none;
+
+}
