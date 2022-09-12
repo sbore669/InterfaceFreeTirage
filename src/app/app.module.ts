@@ -21,13 +21,17 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { HttpClientModule } from '@angular/common/http';
 import { TirageComponent } from './tirage/tirage.component';
+import { DetailsListesComponent } from './details-listes/details-listes.component';
+import { VoirPlusComponent } from './voir-plus/voir-plus.component';
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     AccueilComponent,
     ListeposComponent,
-    TirageComponent
+    TirageComponent,
+    DetailsListesComponent,
+    VoirPlusComponent
   ],
   imports: [
     BrowserModule,

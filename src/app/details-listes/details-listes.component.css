@@ -1,0 +1,65 @@
+
+.head{
+   display: flex;
+    justify-content: space-between;
+    flex-direction: row; 
+    margin-left: 50vh;
+    margin-right: 50vh;
+    margin-top: 5vh;
+   
+}
+
+.contain-main{
+    display: flex;
+    flex-direction: column;
+}
+.head table{
+    align:left;
+}
+.headTable{
+    float: right;
+}
+
+.headTable td{
+    background: #008000;
+    height: 50px;
+    width: 150px;
+   
+
+}
+.tableDetails
+{
+    border-collapse: collapse; /* Les bordures du tableau seront separés avec border-collapse: separate */
+    border-spacing : 10px;
+    flex: 2; 
+    justify-content: center;
+    flex-direction: column; 
+    margin-left: 50vh;
+    margin-right: 50vh;
+    margin-top: 5vh;
+}
+.tableDetails tr 
+{
+    border-radius: 5rem;
+    background: #CBD3DD;
+}
+.tableDetails td{
+    border-collapse: collapse;
+    text-align: left;
+    padding: 10px;
+    /* border: 1px solid white; */
+    font-size: 22px;
+    
+    
+}
+.tableDetails .voir{
+    /* margin-left: -200vh; */
+    text-align: right;
+}
+
+.body{
+     /*pour centrer les lignes du tableau display et justify-content */
+    display: flex;
+    justify-content: space-around;
+    border-radius: 22px;
+}
