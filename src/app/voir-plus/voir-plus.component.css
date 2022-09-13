@@ -1,3 +1,8 @@
+.contain{
+    margin-left:auto;
+    margin-right:auto;
+    width: 1100px;
+}
 .info{
     border-collapse: collapse;
     width: 10%;
@@ -8,9 +13,20 @@
     justify-content: space-around;
 
 }
+.info{
+    border: 1px solid black;
+    height: 100px;
+    width: 130px;
+    position: absolute;
+    right: 50%;
+    top: 100px;
+}
 .listePostulant{
+    
     border-collapse: collapse;
     width: 100%;
+    top:110%;
+    bottom: 50%;
     
 }
  .listePostulant td,.listePostulant{
@@ -20,7 +36,7 @@
     padding: 6px;
 }
 .listePostulant th{
-    background: green;
+    background: #bed51180;
     padding: 10px;
     color:black;
     text-align: left;
@@ -35,4 +51,11 @@
 h3{
    
     text-align: center;
+}
+.hr{
+    height: 50%;
+   background-color: #839D2D;
+    width: 3px;
+    border: 1px solid #839D2D;
+    right:50px ;
 }
