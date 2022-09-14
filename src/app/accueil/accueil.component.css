@@ -23,6 +23,8 @@
 
 .dashboard-card-content {
   text-align: center;
+  color: black;
+  font-size: 26px;
 }
 .mat-card>:last-child:not(.mat-card-footer), .mat-card-content>:last-child:not(.mat-card-footer) {
   margin-bottom: 40px;

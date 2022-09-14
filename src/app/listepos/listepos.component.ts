@@ -24,7 +24,7 @@ export class ListeposComponent implements OnInit {
   }
 /** Columns displayed in the table. Columns IDs can be added, removed, or reordered. */
   ELEMENT_DATA!: Listepostu[];
-  displayedColumns: string[] = ['id_listepostulants', 'date', 'libele'];
+  displayedColumns: string[] = ['id_listepostulants', 'libele','date','actions'];
   dataSource = new MatTableDataSource<Listepostu>(this.ELEMENT_DATA);
   
   

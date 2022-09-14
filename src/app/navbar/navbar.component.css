@@ -62,5 +62,6 @@ img{
   background-color: #abc4c366;
   color: rgba(0, 0, 0, 0.87);
 }
-
-
+.material-icons{
+  color: #c0d517;
+}
