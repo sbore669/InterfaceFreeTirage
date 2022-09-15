@@ -23,6 +23,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { TirageComponent } from './tirage/tirage.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatDialogModule } from '@angular/material/dialog';
+import { DetailsListesComponent } from './details-listes/details-listes.component';
+import { VoirPlusComponent } from './voir-plus/voir-plus.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +33,8 @@ import { MatDialogModule } from '@angular/material/dialog';
     AccueilComponent,
     ListeposComponent,
     TirageComponent,
+    DetailsListesComponent,
+    VoirPlusComponent
 
   ],
   imports: [

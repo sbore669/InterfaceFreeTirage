@@ -28,6 +28,10 @@ export class TirageService {
     return this.http.post<void>(`http://localhost:8080/postulants/import/excel/${libele}`,data);
 
   }
+  urll="http://localhost:8080/tirage/toutTirageIdListe"
+  getToutTirage(id: number): Observable<object>{
+    return this.http.get(`${this.urll}/${id}`);
+  }
 
 
 
