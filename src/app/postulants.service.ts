@@ -24,4 +24,5 @@ export class PostulantsService {
     return this.http.get<Postulants[]>(`${this.url}`);
     
   }
+  
 }

@@ -8,8 +8,9 @@ import { VoirPlusComponent } from './voir-plus/voir-plus.component';
 const routes: Routes = [
   {path:'accueil', component:AccueilComponent},
   {path:'tirage', component:TirageComponent},
-  {path:'detailsliste', component:DetailsListesComponent},
-  {path:'voirplus', component:VoirPlusComponent}
+
+  {path:'detailsliste/:id', component:DetailsListesComponent},
+  {path:'voirplus/:id', component:VoirPlusComponent}
 ];
 
 @NgModule({

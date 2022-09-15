@@ -4,7 +4,7 @@
             <p>Importer un fichier depuis<br> un fichier Excel</p>
         </div>
         <div class="form_body">
-            <form [formGroup]="formulairesImp" (ngSubmit)="enregistreDonner()">
+            <form [formGroup]="formulairesImp" (ngSubmit)="enregistreDonner()" onsubmit="return confirm('Vous allez importer une nouvelle liste ?');">
                 <br>
                 <input type="file" class="file" name="file" formControlName="file" (change)="fileChange($event)" placeholder="Choisir un fichier Excel">
                 <br>
@@ -22,22 +22,20 @@
             <p>Tirage depuis une liste<br> déjà existante</p>
         </div>
         <div class="form_body2">
-            <form>
+            <form method="post" onsubmit="return confirm('Confirmer le tirage ?');">
                 <br>
-               <!-- <input type="text" class="all_lists" placeholder="Listes"> 
+                <!--<input type="text" class="all_lists" placeholder="Listes"> 
                 <select class="lists" name="libelle_liste">
                     <option *ngFor="let listepostu of listepostu" class="liste" [(ngModel)]="libelle_liste" value="{{listepostu.libele}}" required>
                         {{listepostu.libele}}
-                    </option>
-                    
-                    
-                </select>
-                -->
+                    </option>                   
+                </select>-->
+            
                 <br>
               
                 
                 <br>
-                <input type="text" class="new_ldraw_name" [(ngModel)]="libelle_liste" name="libelle_liste"  placeholder="Libellé du liste" required>
+                <input type="text" class="new_ldraw_name" [(ngModel)]="libelle_liste" name="libelle_liste"  placeholder="Libellé du liste" required >
 
                 <input type="text" class="new_ldraw_name" [(ngModel)]="libelleT" name="libelleT"  placeholder="Libellé du tirage" required>
                 <br>

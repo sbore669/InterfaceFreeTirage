@@ -4,6 +4,7 @@
         <table class="headTable">
             <tr>
                 <th>Postulants</th>
+
                 <th>Date liste</th>
             </tr>
             <tr>
@@ -58,6 +59,17 @@
                 <td class="voir"><a href="/voirplus"><button> voir plus</button></a></td>  
             </tr>-->
         
+    </div>
+    <div class="body">
+        <table class="tableDetails">
+            <tr *ngFor="let detaillistes of detailliste">
+                <td>{{detaillistes[2]}}</td>
+                <td>{{detaillistes[1]}}</td>
+                <td>{{detaillistes[3]}}</td>               
+                <td class="voir"><button (click)="gotoVoirplus(detaillistes[0])"> voir plus</button></td>               
+            </tr>
+            <!-- <br> -->
+           
 
         </table>
     </div>
