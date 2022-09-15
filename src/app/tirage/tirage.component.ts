@@ -60,6 +60,8 @@ export class TirageComponent implements OnInit {
         this.formulairesImp.reset()
       }
     )
+
+    
   }
 
 

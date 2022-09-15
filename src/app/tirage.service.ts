@@ -11,6 +11,7 @@ export class TirageService {
   url = 'http://localhost:8080/tirage/voir';
   //adresse du @CrossOrigin de l'api suivie du chemin d'accès de  la fonction dans le controller
   urlNombreListeTire = 'http://localhost:8080/Listepostulants/NombreListeTire';
+  urlTotalTirage = 'http://localhost:8080/tirage/totalTirage';
 
   constructor(private http: HttpClient) { }
   //Nombre liste tirés
@@ -38,6 +39,10 @@ export class TirageService {
 
 getTotalListe():Observable<object>{
   return this.http.get(this.urlNombreListeTire);
+}
+
+getTotalTirage():Observable<object>{
+  return this.http.get(this.urlTotalTirage);
 }
 
 }

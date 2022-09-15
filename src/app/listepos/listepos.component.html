@@ -19,6 +19,11 @@
       <th mat-header-cell *matHeaderCellDef> Date </th>
       <td mat-cell *matCellDef="let element"> {{element.date}} </td>
     </ng-container>
+
+    <ng-container matColumnDef="NombreTirage">
+      <th mat-header-cell *matHeaderCellDef>Le nombre de tirage sur la liste</th>
+      <td mat-cell *matCellDef="let element">{{element.NombreTirage}}</td>
+    </ng-container>
     
     <ng-container matColumnDef="actions">
       <mat-header-cell *matHeaderCellDef></mat-header-cell>

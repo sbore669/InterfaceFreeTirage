@@ -20,13 +20,17 @@ export class AccueilComponent implements OnInit{
   nombreListeTire: any;
   //declaration variatible total liste
   totalListe: any;
+  totalTirage: any;
 
   constructor(private breakpointObserver: BreakpointObserver,
     private service: PostulantsService,
     //total liste
     private serviceTirage: TirageService,
-    private serviceListeTire: ListepostservService
+    private serviceListeTire: ListepostservService,
+    private serviceTotalTirage: TirageService
     ) {}
+
+    
 
     ngOnInit(): void {
         this.service.NombrePostulant().subscribe(data=>{
@@ -43,6 +47,11 @@ export class AccueilComponent implements OnInit{
         this.serviceTirage.getTotalListe().subscribe(data=>{
           this.totalListe = data;
           console.log(data);
+          //total tirage
+        })
+        this.serviceTotalTirage.getTotalTirage().subscribe(data=>{
+          this.totalTirage = data;
+          console.log(data);
         })
         
     }
@@ -54,7 +63,7 @@ export class AccueilComponent implements OnInit{
       if (matches) {
         return [
           { title: 'Total liste Postulants', cols: 1, rows: 1,content: this.totalListe, },
-          { title: 'Total Tirage effectuer', cols: 1, rows: 1, content: this.nombreTirage },
+          { title: 'Total Tirage effectuer', cols: 1, rows: 1, content: this.totalTirage },
           
         ];
       }
@@ -62,7 +71,7 @@ export class AccueilComponent implements OnInit{
       return [
         { title: 'Total liste Postulants', cols: 1, rows: 1,content:this.totalListe, },
         //appel du nombre tirage pour l'affiche
-        { title: 'Total Tirage effectuer', cols: 1, rows: 1,content: this.nombreTirage },
+        { title: 'Total Tirage effectuer', cols: 1, rows: 1,content: this.totalTirage },
       
       ];
     })

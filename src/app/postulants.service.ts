@@ -22,5 +22,6 @@ export class PostulantsService {
   getPostulants(): Observable<Postulants[]> {
 
     return this.http.get<Postulants[]>(`${this.url}`);
+    
   }
 }

@@ -46,6 +46,9 @@ button{
     background-color: black;
     color: white;
 }
+button:hover{
+    background-color: #41b53f;
+}
 .tableDetails tr 
 {
     border-radius: 5rem;

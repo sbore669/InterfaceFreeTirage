@@ -23,11 +23,16 @@
 
 .dashboard-card-content {
   text-align: center;
-  color: black;
+  
+  color: rgb(0, 0, 0);
   font-size: 26px;
+
+  
 }
 .mat-card>:last-child:not(.mat-card-footer), .mat-card-content>:last-child:not(.mat-card-footer) {
   margin-bottom: 40px;
+  position: sticky;
+  color: rgb(0, 0, 0);
 }
 .mat-card-header-text {
   margin: 10px 26px;
@@ -51,4 +56,8 @@
 .mat-flat-button.mat-primary, .mat-raised-button.mat-primary, .mat-fab.mat-primary, .mat-mini-fab.mat-primary {
   background-color: #41b53f;
   position: fixed;
+  
+}
+.mat-raised-button.mat-primary:hover{
+  background-color: rgba(255,255, 255, 0.3);
 }
