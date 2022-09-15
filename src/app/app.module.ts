@@ -27,9 +27,6 @@ import { VoirPlusComponent } from './voir-plus/voir-plus.component';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatDialogModule } from '@angular/material/dialog';
-import { DetailsListesComponent } from './details-listes/details-listes.component';
-import { VoirPlusComponent } from './voir-plus/voir-plus.component';
-
 @NgModule({
   declarations: [
     AppComponent,
