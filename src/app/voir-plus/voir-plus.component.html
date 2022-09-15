@@ -1,0 +1,30 @@
+    <h2>Liste</h2>
+    <hr>
+    <h4>Date liste</h4>
+    <div class="info">
+        <p>100</p><br>
+        <p>postulants</p>
+        
+    </div>
+    <p>12/09/2022</p>
+    <h3>Liste  des postulants retenus au tirage</h3>
+    <table class="listePostulant">
+        <tr>
+            <th>Prenom</th>
+            <th>Nom</th>
+            <th>Numero</th>
+            <th>Email</th>
+            <th>Libelle liste</th>
+            <th>Libelle tirage</th>
+        </tr>
+        <tr *ngFor="let voirplus of voirpluss">
+            <td>{{voirplus[2]}}</td>
+            <td>{{voirplus[3]}}</td>
+            <td>{{voirplus[4]}}</td>
+            <td>{{voirplus[5]}}</td>
+            <td>{{voirplus[6]}}</td>
+        </tr>
+        
+        
+
+    </table>

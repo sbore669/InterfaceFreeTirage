@@ -1,13 +1,122 @@
-.container
-{
-    background: #FFFFFF; padding: 15px;
-    border-radius: 15px; align-items: center;
-    color:  #587CFD;;box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+/*.container{
+    position: relative;
+    width: 350px;
+    height: 190px;
+
+    border-radius: 20px;
+    box-shadow: 0 35px 80px rgb(0,0,0,0.15);
+}*/
+
+
+.tirage_forms {
+    display: flex;
+    justify-content: space-arround;
 }
-td{
-    padding-top: 20px;
+
+.import_form {
+    width: 40%;
+    text-align: center;
+    top: 90px;
+    left: 20px;
+    position:absolute;
+    margin-top: 60px;
 }
-.ligne
-{
-    height: 50px; border-left: 2px;
+
+.list_form {
+    width: 40%;
+    text-align: center;
+    top:40px;
+    left: 520px;
+    position: sticky;
+    margin-top: 60px;
+}
+
+.form_title {
+    padding: 12px;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 35px 80px rgb(0 0 0 / 15%);
+    border-radius: 15px 15px 0px 0px;
+
+
+
+}
+.form_title1 {
+    padding: 12px;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 35px 80px rgb(0 0 0 / 15%);
+    border-radius: 15px 15px 0px 0px;
+
+
+
+}
+
+.form_body {
+    background: #fff;
+    width: 100%;
+    float: left;
+    padding: 2%;
+    box-sizing: border-box;
+    position: relative;
+    box-shadow: 0 35px 80px rgb(0 0 0 / 15%);
+    border-radius: 0px 0px 15px 15px;
+}
+.form_body2 {
+    background: #fff;
+    width: 100%;
+    float: left;
+    padding: 2%;
+    box-sizing: border-box;
+    position: relative;
+    box-shadow: 0 35px 80px rgb(0 0 0 / 15%);
+    border-radius: 0px 0px 15px 15px;
+
+}
+
+
+
+.form {
+    text-align: center;
+}
+
+
+.file, .new_list_name, .new_ldraw_name, .ldraw_number, .post_number {
+    background-color: #E6E6E6;
+    width: 80%;
+    border: none;
+}
+
+::placeholder, ::-ms-input-placeholder {
+    color: #E6E6E6;
+}
+
+
+.button4 {
+    color: white;
+    background-color: #c2d610;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    width: 150px;
+    font-weight: 600;
+    height: 30px;
+    margin: 2px 2px;
+    padding: 1px 16px;
+    position: relative;
+}
+
+.button4:hover {
+    background-color: #000000;
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }

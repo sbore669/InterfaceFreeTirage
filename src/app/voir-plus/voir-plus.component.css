@@ -1,0 +1,38 @@
+.info{
+    border-collapse: collapse;
+    width: 10%;
+    border: 1px solid white;
+    background-color: white;
+    flex: 4px;
+    display: flex;
+    justify-content: space-around;
+
+}
+.listePostulant{
+    border-collapse: collapse;
+    width: 100%;
+    
+}
+ .listePostulant td,.listePostulant{
+
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 6px;
+}
+.listePostulant th{
+    background: green;
+    padding: 10px;
+    color:black;
+    text-align: left;
+    
+}
+.listePostulant tr{
+    
+}
+/*nth-child(even)*/
+/* Les bordures du tableau seront separés avec border-collapse: separate */
+   
+h3{
+   
+    text-align: center;
+}

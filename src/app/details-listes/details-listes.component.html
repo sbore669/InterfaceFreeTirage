@@ -1,0 +1,28 @@
+<div class="contain-main">
+    <div class="head">
+        <div style="margin-bottom: -10px;"><h2>Liste2</h2></div>
+        <table class="headTable">
+            <tr>
+                <th></th>
+                <th>Date liste</th>
+            </tr>
+            <tr>
+                <td><a href="#">105</a></td>
+                <td>12/09/2022</td>
+            </tr>
+        </table>
+    </div>
+    <div class="body">
+        <table class="tableDetails">
+            <tr *ngFor="let detaillistes of detailliste">
+                <td>{{detaillistes[2]}}</td>
+                <td>{{detaillistes[1]}}</td>
+                <td>{{detaillistes[3]}}</td>               
+                <td class="voir"><button (click)="gotoVoirplus(detaillistes[0])"> voir plus</button></td>               
+            </tr>
+            <!-- <br> -->
+           
+
+        </table>
+    </div>
+</div>

@@ -1,67 +1,51 @@
-<main>
-    <div class="lesPostulants row ">
-        <div class="col-8">
-            <h1>Faite vos tirages</h1>
+<div class="tirage_forms">
+    <div class="import_form">
+        <div class="form_title">
+            <p>Importer un fichier depuis<br> un fichier Excel</p>
         </div>
-        <div class="col-4" align="center">
-            <img src="assets/tirage2.png" width="30%">
+        <div class="form_body">
+            <form [formGroup]="formulairesImp" (ngSubmit)="enregistreDonner()" onsubmit="return confirm('Vous allez importer une nouvelle liste ?');">
+                <br>
+                <input type="file" class="file" name="file" formControlName="file" (change)="fileChange($event)" placeholder="Choisir un fichier Excel">
+                <br>
+                <input type="text" class="form-control" name="date" formControlName="date" placeholder="date" hidden>
+                <br>
+                <input type="text" name="libele" formControlName="libele" class="new_list_name" placeholder="Libellé de la liste" ><!-- [(ngModel)]="tirage.libelle_liste-->
+                <br>
+                <br>
+                <button type="submit" name="import" class="button4" >Importer </button>
+            </form>
         </div>
-      
-      </div>
-    <div class="container row">
-
-        <div class="col-8">
-            <form class="theme-form">
-                <table>
-                      <tbody>
-                          <tr>
-                              <td>Choisir une liste</td>
-                              <td> <input class="form-control" name="nom" placeholder="Liste pstulants1"></td>
-                          </tr>
-                          <tr>
-                              <td>Donner un nombre</td>
-                              <td> <input type="number" class="form-control" name="nombre" min="1" placeholder="10"></td>
-                          </tr>
-                          <tr>
-                                          <td for="name">Libellé du tirage</td>
-                                          <td><input type="text" id="name" class="form-control" placeholder="Liste apprenants" name="libelleTirage"></td>
-                          </tr>
-                          <tr>
-                              <td><input type="submit" value="Trier" class="form-control btn btn-primary"></td>
-                          </tr>
-          
-                      </tbody>
-                </table>
-          </form>
-        </div>
-       
-        <div class="col-4">
-            <form>
-                <table>
-                      <tbody>
-                          <tr>
-                            <td>
-                                <input type="file" name="importer" id="importer" class="form-control">
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                                <input type="text" name="libelleListe" id="libelleListe" class="form-control" placeholder="Liste apprenants">
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                                <input type="submit" name="import" value="Envoyer" class="form-control btn btn-primary">
-                            </td>
-                          </tr>
-                      </tbody>
-                </table>
-          </form>
-        </div>
-
     </div>
+    <div class="list_form">
+        <div class="form_title1">
+            <p>Tirage depuis une liste<br> déjà existante</p>
+        </div>
+        <div class="form_body2">
+            <form method="post" onsubmit="return confirm('Confirmer le tirage ?');">
+                <br>
+                <!--<input type="text" class="all_lists" placeholder="Listes"> 
+                <select class="lists" name="libelle_liste">
+                    <option *ngFor="let listepostu of listepostu" class="liste" [(ngModel)]="libelle_liste" value="{{listepostu.libele}}" required>
+                        {{listepostu.libele}}
+                    </option>                   
+                </select>-->
+            
+                <br>
+              
+                
+                <br>
+                <input type="text" class="new_ldraw_name" [(ngModel)]="libelle_liste" name="libelle_liste"  placeholder="Libellé du liste" required >
 
-
-
-</main>
+                <input type="text" class="new_ldraw_name" [(ngModel)]="libelleT" name="libelleT"  placeholder="Libellé du tirage" required>
+                <br>
+                <br>
+                <input type="number" class="post_number" [(ngModel)]="nbre" name="nbre" placeholder="Nombre de postulants à tirer">
+                <br>
+                <br>
+                <button class="button4" type="submit" (click)="PosTirage()">Effectuer un tirage</button> 
+            </form>
+        </div>
+    </div>
+</div>
 

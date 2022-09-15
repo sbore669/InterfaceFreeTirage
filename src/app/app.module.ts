@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -21,13 +21,21 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { HttpClientModule } from '@angular/common/http';
 import { TirageComponent } from './tirage/tirage.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatDialogModule } from '@angular/material/dialog';
+import { DetailsListesComponent } from './details-listes/details-listes.component';
+import { VoirPlusComponent } from './voir-plus/voir-plus.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     AccueilComponent,
     ListeposComponent,
-    TirageComponent
+    TirageComponent,
+    DetailsListesComponent,
+    VoirPlusComponent
+
   ],
   imports: [
     BrowserModule,
@@ -45,9 +53,14 @@ import { TirageComponent } from './tirage/tirage.component';
     MatTableModule,
     MatPaginatorModule,
     MatSortModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    MatDialogModule,
+    ReactiveFormsModule
+
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
 })
 export class AppModule { }
