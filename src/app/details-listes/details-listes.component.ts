@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+
 import { ActivatedRoute, Router } from '@angular/router';
 import { ListepostservService } from '../listepostserv.service';
 import { PostultireeService } from '../postultiree.service';
@@ -9,6 +10,7 @@ import { TirageService } from '../tirage.service';
   templateUrl: './details-listes.component.html',
   styleUrls: ['./details-listes.component.css']
 })
+
 
 export class DetailsListesComponent implements OnInit {
    id: number=0;
